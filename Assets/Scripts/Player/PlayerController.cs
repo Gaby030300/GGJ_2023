@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerActionAsssets = new PlayerInputsAsset();
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     private void OnEnable()
