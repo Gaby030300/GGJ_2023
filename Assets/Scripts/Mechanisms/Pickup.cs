@@ -46,19 +46,20 @@ public class Pickup : MonoBehaviour
                 isPicked = true;
             }
 
+            else if (Input.GetKeyDown(KeyCode.E) && isPicked == true)
+            {
+                this.transform.parent = null;
+                GetComponent<Rigidbody>().useGravity = true;
+                GetComponent<BoxCollider>().enabled = true;
+
+                rb.constraints = RigidbodyConstraints.None;
+
+                isPicked = false;
+                isReadyToThrow = false;
+            }
+
         }
 
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            this.transform.parent = null;
-            GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<BoxCollider>().enabled = true;
-
-            rb.constraints = RigidbodyConstraints.None;
-
-            isPicked = false;
-            isReadyToThrow = false;
-        }
     }
 
 
