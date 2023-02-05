@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ba1c0f88ef05845b34e540359979c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolGameObject: {fileID: 4718729177838650724, guid: 897135c0ebf51b04fae20e3010d1425f,
+  poolGameObject: {fileID: 1991950323246705417, guid: 1596425f9f39dac43a22844f60e4b4b7,
     type: 3}
   numObjectsOnStart: 5
 --- !u!114 &8437811278074343558
