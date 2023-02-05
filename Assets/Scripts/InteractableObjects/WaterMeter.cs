@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaterMeter : MonoBehaviour
 {
     [SerializeField] float currentWater, startWater;
     [SerializeField] float speedWaterFalling;
+    [SerializeField] Image bar;
 
     public bool fillingWater;
 
@@ -18,8 +20,9 @@ public class WaterMeter : MonoBehaviour
 
     private void Update()
     {
+        bar.fillAmount = currentWater/100;
         if (currentWater>0 && !fillingWater)
-        {
+        {            
             currentWater -= 1*speedWaterFalling*Time.deltaTime;
         }
     }
