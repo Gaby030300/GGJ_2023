@@ -219,12 +219,12 @@ PrefabInstance:
     - target: {fileID: 6394212723964239911, guid: b343e328f671f0b41b48d2994ef17788,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017629906
+      value: -0.00000001762991
       objectReference: {fileID: 0}
     - target: {fileID: 6394212723964239911, guid: b343e328f671f0b41b48d2994ef17788,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000019363622
+      value: 0.0000000019363626
       objectReference: {fileID: 0}
     - target: {fileID: 6394212724017940350, guid: b343e328f671f0b41b48d2994ef17788,
         type: 3}
@@ -1552,7 +1552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 59, y: -0}
+  m_AnchoredPosition: {x: 49.4, y: -0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612920352
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 114.741394, w: 0}
+  m_margin: {x: -30.65503, y: 0, z: 66.84296, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
