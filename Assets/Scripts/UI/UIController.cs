@@ -9,13 +9,9 @@ using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {    
     public GameObject optionsPanel;
-    [SerializeField] TextMeshProUGUI textCounter;
-
-    public static int sunCounter = 0;
 
     private void Update()
-    {
-        textCounter.text = sunCounter.ToString();
+    {        
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {

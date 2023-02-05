@@ -234,17 +234,17 @@ PrefabInstance:
     - target: {fileID: 6394212724017940350, guid: b343e328f671f0b41b48d2994ef17788,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.14521313
+      value: 0.14521314
       objectReference: {fileID: 0}
     - target: {fileID: 6394212724017940350, guid: b343e328f671f0b41b48d2994ef17788,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000003296683
+      value: 1.6271901e-15
       objectReference: {fileID: 0}
     - target: {fileID: 6394212724017940350, guid: b343e328f671f0b41b48d2994ef17788,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000004838502
+      value: -2.6894993e-16
       objectReference: {fileID: 0}
     - target: {fileID: 6394212724212731889, guid: b343e328f671f0b41b48d2994ef17788,
         type: 3}
@@ -855,6 +855,7 @@ GameObject:
   - component: {fileID: 785201364}
   - component: {fileID: 785201363}
   - component: {fileID: 785201366}
+  - component: {fileID: 785201367}
   - component: {fileID: 785201362}
   m_Layer: 5
   m_Name: HUD
@@ -937,8 +938,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 368057827}
-  - {fileID: 886090747}
   - {fileID: 1312431653}
+  - {fileID: 886090747}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -960,6 +961,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsPanel: {fileID: 470509286}
+--- !u!114 &785201367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785201361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede80120ec3539c41b5080fb0460cf9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   textCounter: {fileID: 1612920352}
 --- !u!224 &886090747 stripped
 RectTransform:
@@ -1344,7 +1357,7 @@ RectTransform:
   - {fileID: 228657427}
   - {fileID: 1003556764}
   m_Father: {fileID: 785201365}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
