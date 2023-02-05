@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerActionAsssets = new PlayerInputsAsset();
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     private void OnEnable()
@@ -37,7 +38,6 @@ public class PlayerController : MonoBehaviour
         move = playerActionAsssets.Player.Move;
         playerActionAsssets.Player.Enable();
     }
-
     private void OnDisable()
     {
         playerActionAsssets.Player.Jump.started -= DoJump;
