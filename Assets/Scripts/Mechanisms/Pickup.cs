@@ -41,6 +41,7 @@ public class Pickup : MonoBehaviour
 
                 GetComponent<BoxCollider>().enabled = false;
                 this.transform.position = pickupPoint.position;
+                transform.rotation = Quaternion.identity;
                 this.transform.parent = GameObject.Find("Pickup Point").transform;
 
                 isPicked = true;
