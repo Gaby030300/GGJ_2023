@@ -411,6 +411,7 @@ GameObject:
   - component: {fileID: 895906066}
   - component: {fileID: 895906068}
   - component: {fileID: 895906067}
+  - component: {fileID: 895906069}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -431,11 +432,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 989227245}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1366}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895906067
@@ -463,8 +464,9 @@ MonoBehaviour:
     Store, Freepik\n\nSounds And Effects: \nFreeSounds.com\nSounds from ZapSplat\n\nVersion
     1.0.2023\n\nThanks for Playing"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 519273281dbe1324b95fc97136fefd96, type: 2}
+  m_sharedMaterial: {fileID: 4494380933739924482, guid: 519273281dbe1324b95fc97136fefd96,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -488,8 +490,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -538,6 +540,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895906065}
   m_CullTransparentMesh: 1
+--- !u!95 &895906069
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895906065}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 782991a3f6ef1434cbcb1bd4364b83f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &989227240
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,9 +655,9 @@ RectTransform:
   m_Children:
   - {fileID: 729326436}
   - {fileID: 1195251534}
+  - {fileID: 895906066}
   - {fileID: 805218535}
   - {fileID: 825943507}
-  - {fileID: 895906066}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -677,7 +699,7 @@ PrefabInstance:
     - target: {fileID: 2627537930414532312, guid: 04ebfa469be0bbe48846e2b304b4ff13,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2627537930414532312, guid: 04ebfa469be0bbe48846e2b304b4ff13,
         type: 3}
@@ -887,7 +909,7 @@ PrefabInstance:
     - target: {fileID: 4649915742353887345, guid: 5c1d6eaae487e1848b938e784fc7129e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4649915742353887345, guid: 5c1d6eaae487e1848b938e784fc7129e,
         type: 3}
