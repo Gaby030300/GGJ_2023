@@ -24,6 +24,9 @@ public class WaterMeter : MonoBehaviour
         if (currentWater>0 && !fillingWater)
         {            
             currentWater -= 1*speedWaterFalling*Time.deltaTime;
+        }else if (currentWater<=0)
+        {
+            GameManager.instance.GameLost();
         }
     }
 

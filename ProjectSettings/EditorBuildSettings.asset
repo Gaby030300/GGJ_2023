@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 24dcc60fe621dfe47bd01c1cc9063e5c
+  - enabled: 1
+    path: Assets/Scenes/Daniel.unity
+    guid: 486bacd6294dbfe428e01d274b861260
   m_configObjects: {}

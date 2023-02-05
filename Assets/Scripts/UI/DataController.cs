@@ -11,5 +11,10 @@ public class DataController : MonoBehaviour
     void Update()
     {
         textCounter.text = sunCounter.ToString();
+        if (sunCounter>=8)
+        {
+            GameManager.instance.Suns();
+            GameManager.instance.GameWin();
+        }
     }
 }

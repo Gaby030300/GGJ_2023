@@ -30,7 +30,7 @@ public class UIController : MonoBehaviour
     public void OnPlayButton()
     {
         SoundManager.instance.PlaySFX("Sound Button");
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Daniel");
     }
     public void OnCreditsButton()
     {

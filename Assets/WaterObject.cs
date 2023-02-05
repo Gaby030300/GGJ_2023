@@ -16,16 +16,12 @@ public class WaterObject : MonoBehaviour
             filledBucket.SetActive(true);
             filled = true;
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Base"))
+        if (other.CompareTag("Base") && filled)
         {
             filledBucket.SetActive(false);
             unFilledBucket.SetActive(true);
             other.GetComponent<WaterMeter>().FillWater(10);
             filled = false;
         }
-    }
+    }    
 }
