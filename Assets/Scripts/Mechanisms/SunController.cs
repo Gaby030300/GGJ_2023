@@ -24,7 +24,7 @@ public class SunController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Toco Player");
+            Debug.Log("Toco Player");            
             DataController.sunCounter++;
         }
         else if (other.CompareTag("Ground"))

@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float turnSmoothVelocity;
     [SerializeField] float turnSmoothTime = 0.1f;
 
+    public ParticleSystem particles;
+
     private Vector3 forceDirection = Vector3.zero;
 
     public LayerMask Ground;
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
         playerActionAsssets = new PlayerInputsAsset();
         Cursor.lockState = CursorLockMode.Confined;
     }
-
+   
     private void OnEnable()
     {
         playerActionAsssets.Player.Jump.started += DoJump;
@@ -107,5 +109,12 @@ public class PlayerController : MonoBehaviour
         Vector3 right = playerCamera.transform.right;
         right.y = 0;
         return right.normalized;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Sun"))
+        {
+            particles.Play();
+        }
     }
 }
