@@ -7,6 +7,7 @@ public class DataController : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textCounter;
     public static int sunCounter = 0;
+
     
     void Update()
     {

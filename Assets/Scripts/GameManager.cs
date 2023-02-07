@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,22 +9,29 @@ public class GameManager : MonoBehaviour
 
     bool soilBagsCompleted, SunsCompelted;
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public void Suns()
     {
-        soilBagsCompleted = true;
+        SunsCompelted = true;
     }
     public void Soil()
     {
-        SunsCompelted = true;
+        soilBagsCompleted = true;
     }
     public void GameLost()
     {
         Debug.Log("Game Lost");
+        SceneManager.LoadScene("Lost");
     }
     public void GameWin()
-    {
-        if (soilBagsCompleted && SunsCompelted)
+    {       
+        if (SunsCompelted && soilBagsCompleted)
         {
+            SceneManager.LoadScene("Win");
             Debug.Log("Game Win");
         }
     }

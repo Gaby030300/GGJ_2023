@@ -14,7 +14,9 @@ public class SoilBagCounter : MonoBehaviour
         if (other.CompareTag("SoilBag"))
         {
             amount++;
-            texto.text = "Soil Bags " + amount + "/10";
+            texto.text = "Soil Bags " + amount + "/3";
+            SoundManager.instance.PlaySFX("Sound Soil");
+            Destroy(other.gameObject);
             if (amount == 3)
             {
                 GameManager.instance.Soil();

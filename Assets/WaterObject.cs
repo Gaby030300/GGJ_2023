@@ -12,12 +12,14 @@ public class WaterObject : MonoBehaviour
     {
         if (other.CompareTag("Water"))
         {
+            SoundManager.instance.PlaySFX("Sound Water");
             unFilledBucket.SetActive(false);
             filledBucket.SetActive(true);
             filled = true;
         }
         if (other.CompareTag("Base") && filled)
         {
+            SoundManager.instance.PlaySFX("Sound Water");
             filledBucket.SetActive(false);
             unFilledBucket.SetActive(true);
             other.GetComponent<WaterMeter>().FillWater(10);

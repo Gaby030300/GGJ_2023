@@ -114,6 +114,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Sun"))
         {
+            SoundManager.instance.PlaySFX("Sound Sun");
             particles.Play();
         }
     }

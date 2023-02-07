@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Daniel.unity
     guid: 486bacd6294dbfe428e01d274b861260
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 684cd60d588d4f24aabf5b5d321b4743
+  - enabled: 1
+    path: Assets/Scenes/Lost.unity
+    guid: db1629b3c43387947bc0cc99afa264d3
   m_configObjects: {}
